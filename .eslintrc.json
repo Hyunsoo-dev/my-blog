@@ -1,16 +1,16 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb",
-    "airbnb/hooks",
-    "airbnb-typescript",
-    "plugin:prettier/recommended"
-  ],
-  "parserOptions": {
-    "project": ["tsconfig.json"]
-  },
-  "rules": {
-    "react/react-in-jsx-scope": "off", // import React 구문 제거
-    "react/jsx-props-no-spreading": "off" //
-  }
+	"extends": [
+		// "next/core-web-vitals",
+		"airbnb",
+		"airbnb/hooks",
+		"airbnb-typescript",
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"project": ["tsconfig.json"]
+	},
+	"rules": {
+		"react/react-in-jsx-scope": "off", // import React 구문 제거
+		"react/jsx-props-no-spreading": "off" //
+	}
 }
