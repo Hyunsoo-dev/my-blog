@@ -8,6 +8,9 @@ export default function Write() {
 	const [title, setTitle] = useState('');
 	const [text, setText] = useState<string | undefined>('');
 
+	// TODO
+	// title, text를 입력 후 글 작성 버튼을 누르면 supabase에 저장하는 로직 추가
+
 	return (
 		<MarkDownEditorLayout>
 			<main className="w-full h-full">
