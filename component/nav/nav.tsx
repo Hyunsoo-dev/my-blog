@@ -3,6 +3,7 @@ import Link from 'next/link';
 const navlinks: { title: string; link: string }[] = [
 	{ title: 'Home', link: '/' },
 	{ title: 'Blog', link: '/blog' },
+	{ title: 'Write', link: '/write' },
 ];
 
 interface NavProps {
