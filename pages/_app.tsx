@@ -5,14 +5,14 @@ import { Inter } from 'next/font/google';
 import Layout from '../component/layout/layout';
 
 const inter = Inter({ subsets: ['latin'] });
-const nanum = localFont({
-	src: [
-		{
-			path: '../public/font/NanumSquareNeo-Variable.ttf',
-			weight: 'bold',
-		},
-	],
-});
+// const nanum = localFont({
+// 	src: [
+// 		{
+// 			path: '../public/font/NanumSquareNeo-Variable.ttf',
+// 			weight: 'bold',
+// 		},
+// 	],
+// });
 // const bmJua = localFont({
 // 	src: [
 // 		{
@@ -23,10 +23,10 @@ const nanum = localFont({
 // });
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<main className={`${nanum.className}`}>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
+		<main className={`${inter.className}`}>
+			{/* <Layout> */}
+			<Component {...pageProps} />
+			{/* </Layout> */}
 		</main>
 	);
 }

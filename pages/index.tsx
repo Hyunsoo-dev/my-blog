@@ -1,10 +1,12 @@
 import { Header, Body } from '../ui/home/index';
-
+import Layout from '@/component/layout/layout';
 export default function Home() {
 	return (
-		<main className="text-lg">
-			<Header />
-			<Body />
-		</main>
+		<Layout>
+			<main className="text-lg">
+				<Header />
+				<Body />
+			</main>
+		</Layout>
 	);
 }
