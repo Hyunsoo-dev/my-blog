@@ -1,9 +1,9 @@
 {
 	"extends": [
-		// "next/core-web-vitals",
-		"airbnb",
-		"airbnb/hooks",
-		"airbnb-typescript",
+		"next/core-web-vitals",
+		// "airbnb",
+		// "airbnb/hooks",
+		// "airbnb-typescript",
 		"plugin:prettier/recommended"
 	],
 	"parserOptions": {
