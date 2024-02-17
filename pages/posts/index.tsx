@@ -1,8 +1,8 @@
 import Layout from '@/component/layout/layout';
-export default function Blog() {
+export default function Posts() {
 	return (
 		<Layout>
-			<main className="text-lg">Blog</main>
+			<main className="text-lg">Posts</main>
 		</Layout>
 	);
 }

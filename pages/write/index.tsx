@@ -3,13 +3,13 @@ import Header from '../../ui/write/header';
 import Footer from '@/ui/write/footer';
 import MarkDownEditorLayout from '@/component/layout/markdownEditorLayout';
 import { useState } from 'react';
-import { setPosts } from '@/util/apis';
+import { setPost } from '@/util/apis';
 export default function Write() {
 	const [title, setTitle] = useState('');
 	const [text, setText] = useState<string | undefined>('');
 
 	const onClickWriteButton = () => {
-		setPosts(title, text);
+		setPost(title, text);
 	};
 	// TODO
 	// title, text를 입력 후 글 작성 버튼을 누르면 supabase에 저장하는 로직 추가
