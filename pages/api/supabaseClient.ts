@@ -14,12 +14,16 @@ interface ExtendedNextApiRequest extends NextApiRequest {
 	method: 'POST' | 'GET';
 }
 
-export default async function handler(req: ExtendedNextApiRequest, res: NextApiResponse<PostTypes[]>) {
-	console.log('req.method: ', req.method);
+export default async function handler(
+	req: ExtendedNextApiRequest,
+	res: NextApiResponse<PostTypes[]>,
+) {
 	if (req.method === 'POST') {
 		// 글 작성
 		const { title, text } = req.body;
+		console.log('req.body: ', req.body);
 		const response = await supabase.from('posts').insert([{ title, text }]);
+		console.log('setPost response: ', response);
 	}
 
 	if (req.method === 'GET') {

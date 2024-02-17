@@ -2,6 +2,8 @@ import Layout from '@/component/layout/layout';
 import { useState, useEffect } from 'react';
 import { getAllPosts } from '@/util/apis';
 import { PostTypes } from '@/type';
+import Header from '@/ui/posts/header';
+import Body from '@/ui/posts/body';
 
 export default function Posts() {
 	const [posts, setPosts] = useState<PostTypes[] | undefined>();
@@ -15,15 +17,9 @@ export default function Posts() {
 	}, []);
 	return (
 		<Layout>
-			<main className="text-lg">
-				{posts?.map((item: PostTypes, idx: number) => {
-					return (
-						<section key={item.id}>
-							<div>{item.title}</div>
-							<div>{item.text}</div>
-						</section>
-					);
-				})}
+			<main className="text-lg h-full bg-green-300">
+				<Header />
+				<Body posts={posts} />
 			</main>
 		</Layout>
 	);
